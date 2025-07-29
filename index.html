@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rider Game</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Start screen -->
+<div id="startScreen">
+  <div class="contentBox">
+    <h1>🏍️ Rider Game</h1>
+    <p>Change direction with ← / → keys</p>
+    <p>Speed up with ↑, slow down with ↓</p>
+    <button id="startButton">Start</button>
+  </div>
+</div>
+
+  <!-- Game area -->
+  <div id="gameArea">
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <div id="timer">5</div>
+    <div id="score">Score: 0</div>
+    <button id="pauseButton">
+      <i class="fas fa-pause"></i>
+    </button>
+  </div>
+
+  <!-- Game over screen -->
+  <div id="gameOverScreen">
+    <h1>⏰ Game Over!</h1>
+    <p>Your time is up. Do you want to play again?</p>
+    <button id="restartButton">Restart</button>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
